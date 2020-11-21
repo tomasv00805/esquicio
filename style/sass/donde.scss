@@ -1,0 +1,46 @@
+.donde{
+    position: relative;
+    .celu{
+        position: absolute;
+        height: 750px;
+        margin-left: 300px;
+        top: -120px;
+    }
+    .texto{
+        margin-left: 50%;
+        width: 500px;
+        .h1{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 50px;
+        }
+        .text{
+            font-size: 18px;
+            margin-top: 25px;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+    }
+}
+@media (max-width: 500px){
+    .donde{
+        position: relative;
+        .celu{
+            position: relative;
+            height: 519px;
+            margin-left: 0px;
+            top: -70px;
+        }
+        .texto{
+            margin: 16px;
+            width: 290px;
+            .h1{
+                font-family: 'IBM Plex Sans 300', sans-serif;
+                font-size: 36px;
+            }
+            .text{
+                font-size: 14px;
+                margin-top: 8px;
+                font-family: 'IBM Plex Mono', monospace;
+            }
+        }
+    }
+}

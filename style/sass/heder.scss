@@ -1,0 +1,86 @@
+header{
+    max-width: 100%;
+    .arriba{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .logo{
+            height: 36px;
+            width: 36px;
+            margin-top: 12px;
+            margin-left: 90px;
+        }
+        .link{
+            margin-right: 90px;
+            width: 550px;
+            ul{
+                margin-top: 24px;
+                list-style-type: none;
+                display: flex;    
+                justify-content: space-between;
+                li{
+                    :hover{
+                        color: #00F3BB;
+                        text-decoration: line-through;
+                    }
+                    :active{    
+                        color: #060A24 56%;
+                        text-decoration: line-through;
+                    }
+                    a{
+                     text-decoration: none;
+                     cursor: pointer;
+                     font-family: 'IBM Plex Mono', monospace;;    
+                     color: black;
+                     font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 500px){
+    header{
+        max-width: 320px;
+        .arriba{
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .logo{
+                height: 36px;
+                width: 36px;
+                margin-top: 12px;
+                margin-left: 10px;
+            }
+            .link{
+                margin-right: 90px;
+                width: 550px;
+                ul{
+                    margin-top: 24px;
+                    list-style-type: none;
+                    display: flex;    
+                    justify-content: space-between;
+                    li{
+                        :hover{
+                            color: #00F3BB;
+                            text-decoration: line-through;
+                        }
+                        :active{    
+                            color: #060A24 56%;
+                            text-decoration: line-through;
+                        }
+                        a{
+                         text-decoration: none;
+                         cursor: pointer;
+                         font-family: 'IBM Plex Mono', monospace;;    
+                         color: black;
+                         font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
