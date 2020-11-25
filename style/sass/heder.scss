@@ -5,16 +5,19 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        .menunavegation_boton{
+            visibility: hidden;
+        }
         .logo{
             height: 36px;
             width: 36px;
             margin-top: 12px;
             margin-left: 90px;
         }
-        .link{
-            margin-right: 90px;
-            width: 550px;
-            ul{
+        #redirec{display: none;}
+            .lista{
+                margin-right: 100px;
+                width: 550px;
                 margin-top: 24px;
                 list-style-type: none;
                 display: flex;    
@@ -37,7 +40,7 @@ header{
                     }
                 }
             }
-        }
+        
     }
 }
 @media(max-width: 500px){
@@ -54,15 +57,46 @@ header{
                 margin-top: 12px;
                 margin-left: 10px;
             }
-            .link{
-                margin-right: 90px;
-                width: 550px;
-                ul{
-                    margin-top: 24px;
+            .menunavegation_boton{
+                margin-top: 15px;
+                margin-right: 15px;
+                visibility: visible;
+                float: right;
+                border: none;
+                background-color: transparent;
+                position: relative;
+                outline: none;
+                font-size: 17px;
+            }
+            .menu_desactive{
+                display: none;
+            }
+            #redirec:checked + .menunavegation_boton label .menu_active{
+                display: none;
+            }
+            #redirec:checked + .menunavegation_boton label .menu_desactive{
+                display: inline;
+            }
+            #redirec:checked + .menunavegation_boton + .lista{
+                visibility: visible;
+            }
+            #redirec{display: none;}
+                .lista{
+                    background-color: blue;
+                    left: 0;
+                    visibility: hidden;
+                    width: 100%;
+                    height: 225px;
+                    padding: 0px;
+                    margin: 0px;
+                    position: absolute;
+                    margin-top: 50px;
+                    float: left;
                     list-style-type: none;
-                    display: flex;    
-                    justify-content: space-between;
+                    display: flex;
+                    flex-direction: column;
                     li{
+                        padding: 17px;
                         :hover{
                             color: #00F3BB;
                             text-decoration: line-through;
@@ -74,13 +108,13 @@ header{
                         a{
                          text-decoration: none;
                          cursor: pointer;
-                         font-family: 'IBM Plex Mono', monospace;;    
-                         color: black;
-                         font-size: 10px;
+                         font-family: 'IBM Plex Mono200', monospace;;    
+                         color: white;
+                         font-size: 16px;
                         }
                     }
                 }
-            }
+            
         }
     }
 }
