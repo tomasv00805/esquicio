@@ -29,16 +29,19 @@ header {
     height: 8vw; }
 
 .donde {
+  position: relative;
   max-width: 100%;
   height: 600px;
   grid-area: mydonde; }
 
 .invitados {
   max-width: 100%;
-  height: 1050px;
+  height: 950px;
   grid-area: myinvitados; }
 
 .temas {
+  position: relative;
+  top: 15%;
   max-width: 100%;
   height: 420px;
   grid-area: mytemas; }
@@ -61,7 +64,6 @@ footer {
   grid-area: myfooter; }
 
 body {
-  width: 100%;
   margin: 0;
   padding: 0;
   display: grid;
@@ -69,61 +71,58 @@ body {
 
 @media (max-width: 500px) {
   header {
-    max-width: 320px;
+    max-width: 100%;
     height: 40px;
     grid-area: myheder; }
 
   .inicio {
-    max-width: 320px;
+    max-width: 100%;
     height: 300px;
     grid-area: myinicio; }
 
   .episodios {
     position: relative;
-    max-width: 320px;
+    max-width: 100%;
     height: 1200px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     grid-area: myepisodios; }
     .episodios .av {
       position: absolute;
       bottom: 0;
-      width: 100%;
       height: 10vw; }
     .episodios .ar {
       position: absolute;
       top: 0;
-      width: 100%;
       height: 10vw; }
 
   .donde {
-    max-width: 320px;
+    max-width: 100%;
     height: 850px;
     grid-area: mydonde; }
 
   .invitados {
-    max-width: 320px;
+    max-width: 100%;
     height: 1560px;
     grid-area: myinvitados; }
 
   .temas {
-    max-width: 320px;
+    top: 0%;
+    max-width: 100%;
     height: 920px;
     grid-area: mytemas; }
 
   .novedades {
     position: relative;
-    max-width: 320px;
+    max-width: 100%;
     height: 340px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     grid-area: mynovedades; }
     .novedades .ar2 {
       position: absolute;
       top: 1;
-      width: 100%;
       height: 15vw; }
 
   footer {
-    max-width: 320px;
     height: 120px;
     grid-area: myfooter; } }
 header {
@@ -139,32 +138,33 @@ header {
       height: 36px;
       width: 36px;
       margin-top: 12px;
-      margin-left: 90px; }
+      margin-left: 4%; }
     header .arriba #redirec {
       display: none; }
     header .arriba .lista {
-      margin-right: 100px;
-      width: 550px;
-      margin-top: 24px;
+      margin-right: 10%;
+      margin-top: 23px;
       list-style-type: none;
       display: flex;
       justify-content: space-between; }
-      header .arriba .lista li :hover {
-        color: #00F3BB;
-        text-decoration: line-through; }
-      header .arriba .lista li :active {
-        color: #060A24 56%;
-        text-decoration: line-through; }
-      header .arriba .lista li a {
-        text-decoration: none;
-        cursor: pointer;
-        font-family: 'IBM Plex Mono', monospace;
-        color: black;
-        font-size: 18px; }
+      header .arriba .lista li {
+        margin-right: 10%; }
+        header .arriba .lista li :hover {
+          color: #00F3BB;
+          text-decoration: line-through; }
+        header .arriba .lista li :active {
+          color: #060A24 56%;
+          text-decoration: line-through; }
+        header .arriba .lista li a {
+          text-decoration: none;
+          cursor: pointer;
+          font-family: 'IBM Plex Mono', monospace;
+          color: black;
+          font-size: 18px; }
 
 @media (max-width: 500px) {
   header {
-    max-width: 320px; }
+    max-width: 100%; }
     header .arriba {
       height: 100%;
       display: flex;
@@ -224,16 +224,17 @@ header {
             color: white;
             font-size: 16px; } }
 .inicio .presentacion {
-  margin-left: 160px;
-  margin-top: 80px; }
+  margin-left: 9%;
+  margin-top: 4%; }
 .inicio .titulo {
+  max-width: 100%;
   font-size: 80px;
   font-family: 'IBM Plex Sans', sans-serif; }
 .inicio .parrafo {
   margin-top: 10px;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 18px;
-  width: 780px; }
+  font-size: 19px;
+  width: 50%; }
 .inicio .conocer :hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
 .inicio .conocer button {
@@ -250,24 +251,24 @@ header {
 
 @media (max-width: 500px) {
   .inicio {
-    max-width: 320px; }
+    max-width: 100%; }
     .inicio .presentacion {
       margin-left: 16px;
       margin-top: 25px; }
     .inicio .titulo {
-      font-size: 36px;
+      font-size: 38px;
       font-family: 'IBM Plex Sans', sans-serif;
-      width: 260px; }
+      width: 80%; }
     .inicio .parrafo {
       margin-top: 16px;
       font-family: 'IBM Plex Mono', monospace;
       font-size: 15px;
-      width: 290px; }
+      width: 95%; }
     .inicio .conocer :hover {
       background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
     .inicio .conocer button {
       margin-top: 36px;
-      width: 288px;
+      width: 95%;
       height: 44px;
       background-color: #00F3BB;
       color: black;
@@ -279,61 +280,63 @@ header {
 .episodios .titu {
   font-size: 50px;
   color: white;
-  margin-left: 201px;
+  margin-left: 9%;
   margin-top: 180px;
   font-family: 'IBM Plex Sans', sans-serif; }
 .episodios .reproduccion {
-  margin: 25px;
+  grid-gap: -100px;
+  position: relative;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 40px;
+  grid-gap: 20px;
   display: grid;
   grid-template-areas: "ep1 ep2" "ep3 ep4"; }
+  .episodios .reproduccion .r1, .episodios .reproduccion .r2, .episodios .reproduccion .r3, .episodios .reproduccion .r4 {
+    height: 290px;
+    width: 100%;
+    margin: 1px; }
   .episodios .reproduccion .r1 {
-    height: 260px;
-    margin-left: 75px;
-    margin-bottom: 75px;
     grid-area: ep1; }
   .episodios .reproduccion .r2 {
-    height: 260px;
-    margin-left: 75px;
-    margin-bottom: 75px;
     grid-area: ep2; }
   .episodios .reproduccion .r3 {
-    height: 260px;
-    margin-left: 75px;
-    margin-bottom: 75px;
     grid-area: ep3; }
   .episodios .reproduccion .r4 {
-    height: 260px;
-    margin-left: 75px;
-    margin-bottom: 75px;
     grid-area: ep4; }
   .episodios .reproduccion .r1-sm, .episodios .reproduccion .r2-sm, .episodios .reproduccion .r3-sm, .episodios .reproduccion .r4-sm {
-    visibility: hidden; }
+    display: none; }
 
 @media (max-width: 500px) {
-  .episodios .titu {
-    font-size: 36px;
-    color: white;
-    margin-left: 16px;
-    margin-top: 64px;
-    font-family: 'IBM Plex Sans', sans-serif; }
-  .episodios .reproduccion {
-    margin: 0px;
-    display: flex;
-    flex-direction: column; }
-    .episodios .reproduccion .r1, .episodios .reproduccion .r2, .episodios .reproduccion .r3, .episodios .reproduccion .r4 {
-      display: none; }
-    .episodios .reproduccion .r1-sm, .episodios .reproduccion .r2-sm, .episodios .reproduccion .r3-sm, .episodios .reproduccion .r4-sm {
-      margin: 11px;
-      visibility: visible; } }
+  .episodios {
+    max-width: 100%; }
+    .episodios .titu {
+      font-size: 36px;
+      color: white;
+      margin-left: 16px;
+      margin-top: 64px;
+      font-family: 'IBM Plex Sans', sans-serif; }
+    .episodios .reproduccion {
+      grid-gap: 0px;
+      margin: 0px;
+      display: flex;
+      flex-direction: column; }
+      .episodios .reproduccion .r1, .episodios .reproduccion .r2, .episodios .reproduccion .r3, .episodios .reproduccion .r4 {
+        display: none; }
+      .episodios .reproduccion .r1-sm, .episodios .reproduccion .r2-sm, .episodios .reproduccion .r3-sm, .episodios .reproduccion .r4-sm {
+        margin: 8px;
+        height: 240px;
+        display: inline; } }
 .donde {
+  display: flex;
   position: relative; }
   .donde .celu {
-    position: absolute;
-    height: 750px;
-    margin-left: 300px;
+    position: relative;
+    height: 100%;
+    margin-left: 15%;
     top: -120px; }
   .donde .texto {
-    margin-left: 50%;
+    margin-left: 8%;
     width: 500px; }
     .donde .texto .h1 {
       font-family: 'IBM Plex Sans 300', sans-serif;
@@ -345,52 +348,59 @@ header {
 
 @media (max-width: 500px) {
   .donde {
-    position: relative; }
+    display: inline;
+    position: relative;
+    max-width: 100%; }
     .donde .celu {
       position: relative;
-      height: 519px;
-      margin-left: 0px;
+      align-items: center;
+      height: 510px;
+      width: 100%;
+      margin-left: 0%;
       top: -70px; }
     .donde .texto {
-      margin: 16px;
-      width: 290px; }
+      position: relative;
+      top: -40px;
+      margin: 14px;
+      width: 90%; }
       .donde .texto .h1 {
         font-family: 'IBM Plex Sans 300', sans-serif;
         font-size: 36px; }
       .donde .texto .text {
         font-size: 14px;
-        margin-top: 8px;
+        margin-bottom: 5px;
         font-family: 'IBM Plex Mono', monospace; } }
-.invitados {
-  max-width: 100%; }
-  .invitados .h1 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 50px;
-    margin-left: 201px;
-    margin-top: 80px; }
-  .invitados .imagenes {
-    display: grid;
-    margin-top: 30px;
-    grid-template-areas: 'i1 i2 i3' 'i4 i5 i6'; }
-    .invitados .imagenes .i1, .invitados .imagenes .i2, .invitados .imagenes .i3, .invitados .imagenes .i4, .invitados .imagenes .i5, .invitados .imagenes .i6 {
-      height: 440px;
-      width: 634px; }
-    .invitados .imagenes .i1 {
-      grid-area: i1; }
-    .invitados .imagenes .i2 {
-      grid-area: i2; }
-    .invitados .imagenes .i3 {
-      grid-area: i3; }
-    .invitados .imagenes .i4 {
-      grid-area: i4; }
-    .invitados .imagenes .i5 {
-      grid-area: i5; }
-    .invitados .imagenes .i6 {
-      grid-area: i6; }
+.invitados .h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 50px;
+  margin-left: 9%;
+  margin-top: 70px; }
+.invitados .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 90%;
+  grid-template-areas: 'i1 i2 i3' 'i4 i5 i6'; }
+  .invitados .imagenes .i1, .invitados .imagenes .i2, .invitados .imagenes .i3, .invitados .imagenes .i4, .invitados .imagenes .i5, .invitados .imagenes .i6 {
+    width: 33.3%;
+    height: 50%; }
+  .invitados .imagenes .i1 {
+    grid-area: i1; }
+  .invitados .imagenes .i2 {
+    grid-area: i2; }
+  .invitados .imagenes .i3 {
+    grid-area: i3; }
+  .invitados .imagenes .i4 {
+    grid-area: i4; }
+  .invitados .imagenes .i5 {
+    grid-area: i5; }
+  .invitados .imagenes .i6 {
+    grid-area: i6; }
 
 @media (max-width: 500px) {
   .invitados {
-    max-width: 360px; }
+    max-width: 100%; }
     .invitados .h1 {
       font-family: 'IBM Plex Sans', sans-serif;
       font-size: 36px;
@@ -398,23 +408,22 @@ header {
     .invitados .imagenes {
       margin: 0px;
       display: flex;
+      flex-wrap: nowrap;
       flex-direction: column; }
       .invitados .imagenes .i1, .invitados .imagenes .i2, .invitados .imagenes .i3, .invitados .imagenes .i4, .invitados .imagenes .i5, .invitados .imagenes .i6 {
         height: 240px;
-        width: 320px; } }
+        width: 100%; } }
 .temas .h1 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 50px;
-  margin-left: 240px;
-  margin-top: 50px; }
+  margin-left: 240px; }
 .temas .contenedor {
-  margin-top: 50px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 18%;
+  margin-right: 15%;
   display: grid;
   grid-template-areas: 'myim1 myim2 myim3 myim4' 'mytext1 mytext2 mytext3 mytext4'; }
   .temas .contenedor .im1, .temas .contenedor .im2, .temas .contenedor .im3, .temas .contenedor .im4 {
-    width: 320px;
+    width: 100%;
     height: 120px; }
     .temas .contenedor .im1 .img1, .temas .contenedor .im1 .img2, .temas .contenedor .im1 .img3, .temas .contenedor .im1 .img4, .temas .contenedor .im2 .img1, .temas .contenedor .im2 .img2, .temas .contenedor .im2 .img3, .temas .contenedor .im2 .img4, .temas .contenedor .im3 .img1, .temas .contenedor .im3 .img2, .temas .contenedor .im3 .img3, .temas .contenedor .im3 .img4, .temas .contenedor .im4 .img1, .temas .contenedor .im4 .img2, .temas .contenedor .im4 .img3, .temas .contenedor .im4 .img4 {
       display: block;
@@ -433,7 +442,7 @@ header {
     margin: auto;
     text-align: center;
     color: black;
-    width: 150px;
+    width: 50%;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 22px; }
   .temas .contenedor .tx1 {
@@ -446,48 +455,50 @@ header {
     grid-area: mytext4; }
 
 @media (max-width: 500px) {
-  .temas .h1 {
-    font-family: 'IBM Plex Sans 300', sans-serif;
-    font-size: 36px;
-    margin-left: 16px;
-    margin-top: 48px; }
-  .temas .contenedor {
-    max-width: 320px;
-    margin: 0px;
-    grid-template-areas: 'myim1' 'mytext1' 'myim2' 'mytext2' 'myim3' 'mytext3' 'myim4' 'mytext4'; }
-    .temas .contenedor .im1, .temas .contenedor .im2, .temas .contenedor .im3, .temas .contenedor .im4 {
-      margin-top: 24px;
-      width: 320px;
-      height: 120px; }
-      .temas .contenedor .im1 .img1, .temas .contenedor .im1 .img2, .temas .contenedor .im1 .img3, .temas .contenedor .im1 .img4, .temas .contenedor .im2 .img1, .temas .contenedor .im2 .img2, .temas .contenedor .im2 .img3, .temas .contenedor .im2 .img4, .temas .contenedor .im3 .img1, .temas .contenedor .im3 .img2, .temas .contenedor .im3 .img3, .temas .contenedor .im3 .img4, .temas .contenedor .im4 .img1, .temas .contenedor .im4 .img2, .temas .contenedor .im4 .img3, .temas .contenedor .im4 .img4 {
-        display: block;
-        margin: auto;
-        margin-top: 12px; }
-    .temas .contenedor .im1 {
-      grid-area: myim1; }
-    .temas .contenedor .im2 {
-      grid-area: myim2; }
-    .temas .contenedor .im3 {
-      grid-area: myim3; }
-    .temas .contenedor .im4 {
-      grid-area: myim4; }
-    .temas .contenedor .tx1, .temas .contenedor .tx2, .temas .contenedor .tx3, .temas .contenedor .tx4 {
-      margin: auto;
-      letter-spacing: 0;
-      margin-top: 5px;
-      text-align: center;
-      color: black;
-      width: 190px;
+  .temas {
+    max-width: 100%; }
+    .temas .h1 {
       font-family: 'IBM Plex Sans 300', sans-serif;
-      font-size: 24px; }
-    .temas .contenedor .tx1 {
-      grid-area: mytext1; }
-    .temas .contenedor .tx2 {
-      grid-area: mytext2; }
-    .temas .contenedor .tx3 {
-      grid-area: mytext3; }
-    .temas .contenedor .tx4 {
-      grid-area: mytext4; } }
+      font-size: 36px;
+      margin-left: 16px;
+      margin-top: 48px; }
+    .temas .contenedor {
+      max-width: 100%;
+      margin: 0px;
+      grid-template-areas: 'myim1' 'mytext1' 'myim2' 'mytext2' 'myim3' 'mytext3' 'myim4' 'mytext4'; }
+      .temas .contenedor .im1, .temas .contenedor .im2, .temas .contenedor .im3, .temas .contenedor .im4 {
+        margin-top: 24px;
+        width: 100%;
+        height: 120px; }
+        .temas .contenedor .im1 .img1, .temas .contenedor .im1 .img2, .temas .contenedor .im1 .img3, .temas .contenedor .im1 .img4, .temas .contenedor .im2 .img1, .temas .contenedor .im2 .img2, .temas .contenedor .im2 .img3, .temas .contenedor .im2 .img4, .temas .contenedor .im3 .img1, .temas .contenedor .im3 .img2, .temas .contenedor .im3 .img3, .temas .contenedor .im3 .img4, .temas .contenedor .im4 .img1, .temas .contenedor .im4 .img2, .temas .contenedor .im4 .img3, .temas .contenedor .im4 .img4 {
+          display: block;
+          margin: auto;
+          margin-top: 12px; }
+      .temas .contenedor .im1 {
+        grid-area: myim1; }
+      .temas .contenedor .im2 {
+        grid-area: myim2; }
+      .temas .contenedor .im3 {
+        grid-area: myim3; }
+      .temas .contenedor .im4 {
+        grid-area: myim4; }
+      .temas .contenedor .tx1, .temas .contenedor .tx2, .temas .contenedor .tx3, .temas .contenedor .tx4 {
+        margin: auto;
+        letter-spacing: 0;
+        margin-top: 5px;
+        text-align: center;
+        color: black;
+        width: 190px;
+        font-family: 'IBM Plex Sans 300', sans-serif;
+        font-size: 24px; }
+      .temas .contenedor .tx1 {
+        grid-area: mytext1; }
+      .temas .contenedor .tx2 {
+        grid-area: mytext2; }
+      .temas .contenedor .tx3 {
+        grid-area: mytext3; }
+      .temas .contenedor .tx4 {
+        grid-area: mytext4; } }
 .novedades .text {
   margin-top: 200px;
   margin-left: 33%;
@@ -510,27 +521,29 @@ header {
   border: none; }
 
 @media (max-width: 500px) {
-  .novedades .text {
-    text-align: center;
-    margin-top: 64px;
-    margin-left: 14px;
-    font-size: 36px;
-    color: white;
-    font-family: 'IBM Plex Sans 300', sans-serif; }
-  .novedades .escuchar :hover {
-    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
-  .novedades .escuchar button {
-    margin-top: 35px;
-    margin-left: 15px;
-    width: 290px;
-    height: 50px;
-    background-color: #00F3BB;
-    color: black;
-    text-decoration: none;
-    font-family: 'IBM Plex Mono 300', monospace;
-    top: 25px;
-    font-size: 20px;
-    border: none; } }
+  .novedades {
+    max-width: 100%; }
+    .novedades .text {
+      text-align: center;
+      margin-top: 64px;
+      margin-left: 14px;
+      font-size: 36px;
+      color: white;
+      font-family: 'IBM Plex Sans 300', sans-serif; }
+    .novedades .escuchar :hover {
+      background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
+    .novedades .escuchar button {
+      margin-top: 35px;
+      margin-left: 15px;
+      width: 92%;
+      height: 52px;
+      background-color: #00F3BB;
+      color: black;
+      text-decoration: none;
+      font-family: 'IBM Plex Mono 300', monospace;
+      top: 25px;
+      font-size: 20px;
+      border: none; } }
 footer .contenedor {
   margin-left: 100px;
   margin-right: 100px;
@@ -554,29 +567,35 @@ footer .contenedor {
           font-size: 20px; }
 
 @media (max-width: 500px) {
-  footer .contenedor {
-    margin: 0px;
-    display: flex;
-    flex-direction: column; }
-    footer .contenedor .derechos {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 14px;
-      margin-top: 25px;
-      margin-left: 47px; }
-    footer .contenedor .redes {
-      font-family: "font_awesome_5_brands";
-      font-family: 'IBM Plex Mono', monospace;
-      margin-top: 20px;
-      margin-left: 8px; }
-      footer .contenedor .redes ul {
-        list-style-type: none;
-        display: flex;
-        margin: 0;
-        margin-block: 0px;
-        padding: 0; }
-        footer .contenedor .redes ul li {
-          margin-left: 38px; }
-          footer .contenedor .redes ul li i {
-            font-size: 16px; } }
+  footer {
+    max-width: 100%; }
+    footer .contenedor {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      footer .contenedor .derechos {
+        font-family: 'IBM Plex Mono', monospace;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 25px;
+        margin-left: 47px;
+        margin-bottom: 20px; }
+      footer .contenedor .redes {
+        font-family: "font_awesome_5_brands";
+        font-family: 'IBM Plex Mono', monospace; }
+        footer .contenedor .redes ul {
+          width: 100%;
+          list-style-type: none;
+          display: flex;
+          justify-content: space-around;
+          margin: 0;
+          margin-block: 0px;
+          padding: 0px;
+          padding-inline-start: 0px; }
+          footer .contenedor .redes ul li {
+            margin-left: 0px; }
+            footer .contenedor .redes ul li i {
+              font-size: 16px; } }
 
 /*# sourceMappingURL=mein.css.map */

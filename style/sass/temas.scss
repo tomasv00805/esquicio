@@ -3,18 +3,17 @@
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 50px;
         margin-left: 240px;
-        margin-top: 50px;
     }
     .contenedor{
-        margin-top: 50px;
-        margin-left: 300px;
-        margin-right: 300px;
+
+        margin-left: 18%;
+        margin-right: 15%;
         display: grid;
         grid-template-areas: 
         'myim1 myim2 myim3 myim4'
         'mytext1 mytext2 mytext3 mytext4';
         .im1,.im2,.im3,.im4{
-            width: 320px;
+            width: 100%;
             height: 120px;
             .img1,.img2,.img3,.img4{
                 display: block;
@@ -40,7 +39,7 @@
             margin: auto;
             text-align: center;
             color: black;
-            width: 150px;
+            width: 50%;
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 22px;
         }
@@ -52,6 +51,7 @@
 }
 @media (max-width:500px){
     .temas{
+        max-width: 100%;
         .h1{
             font-family: 'IBM Plex Sans 300', sans-serif;
             font-size: 36px;
@@ -59,7 +59,7 @@
             margin-top: 48px;
         }
         .contenedor{
-            max-width: 320px;
+            max-width: 100%;
             margin:0px;
             grid-template-areas: 
             'myim1'
@@ -72,7 +72,7 @@
             'mytext4';
             .im1,.im2,.im3,.im4{
                 margin-top: 24px;
-                width: 320px;
+                width: 100%;
                 height: 120px;
                 .img1,.img2,.img3,.img4{
                     display: block;

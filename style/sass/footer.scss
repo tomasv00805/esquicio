@@ -29,29 +29,35 @@ footer{
 }
 @media(max-width:500px){
     footer{
+        max-width: 100%;
         .contenedor{
             margin: 0px;
             display: flex;
             flex-direction: column;
+            justify-content: center;
         .derechos{
             font-family: 'IBM Plex Mono', monospace;
+            width: 100%;
             font-size: 14px;
             margin-top: 25px;
             margin-left: 47px;
+            margin-bottom: 20px;
         }
         .redes{
             font-family: 'font_awesome_5_brands' ;
             font-family:'IBM Plex Mono', monospace;
-            margin-top: 20px;
-            margin-left: 8px;
+
             ul{
+                width: 100%;
                 list-style-type: none;
-                display: flex;    
+                display: flex;
+                justify-content: space-around;
                 margin: 0;
                 margin-block: 0px;
-                padding: 0;
+                padding: 0px;
+                padding-inline-start: 0px;
                 li{
-                   margin-left: 38px;
+                   margin-left: 0px;
                    i{
                        font-size: 16px;
                    }

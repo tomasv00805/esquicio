@@ -26,16 +26,19 @@ header {
     height: 8vw; }
 
 .donde {
+  position: relative;
   max-width: 100%;
   height: 600px;
   grid-area: mydonde; }
 
 .invitados {
   max-width: 100%;
-  height: 1050px;
+  height: 950px;
   grid-area: myinvitados; }
 
 .temas {
+  position: relative;
+  top: 15%;
   max-width: 100%;
   height: 420px;
   grid-area: mytemas; }
@@ -58,7 +61,6 @@ footer {
   grid-area: myfooter; }
 
 body {
-  width: 100%;
   margin: 0;
   padding: 0;
   display: grid;
@@ -66,61 +68,58 @@ body {
 
 @media (max-width: 500px) {
   header {
-    max-width: 320px;
+    max-width: 100%;
     height: 40px;
     grid-area: myheder; }
 
   .inicio {
-    max-width: 320px;
+    max-width: 100%;
     height: 300px;
     grid-area: myinicio; }
 
   .episodios {
     position: relative;
-    max-width: 320px;
+    max-width: 100%;
     height: 1200px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     grid-area: myepisodios; }
     .episodios .av {
       position: absolute;
       bottom: 0;
-      width: 100%;
       height: 10vw; }
     .episodios .ar {
       position: absolute;
       top: 0;
-      width: 100%;
       height: 10vw; }
 
   .donde {
-    max-width: 320px;
+    max-width: 100%;
     height: 850px;
     grid-area: mydonde; }
 
   .invitados {
-    max-width: 320px;
+    max-width: 100%;
     height: 1560px;
     grid-area: myinvitados; }
 
   .temas {
-    max-width: 320px;
+    top: 0%;
+    max-width: 100%;
     height: 920px;
     grid-area: mytemas; }
 
   .novedades {
     position: relative;
-    max-width: 320px;
+    max-width: 100%;
     height: 340px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     grid-area: mynovedades; }
     .novedades .ar2 {
       position: absolute;
       top: 1;
-      width: 100%;
       height: 15vw; }
 
   footer {
-    max-width: 320px;
     height: 120px;
     grid-area: myfooter; } }
 

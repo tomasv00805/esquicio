@@ -12,18 +12,18 @@ header{
             height: 36px;
             width: 36px;
             margin-top: 12px;
-            margin-left: 90px;
+            margin-left: 4%;
         }
         #redirec{display: none;}
             .lista{
-                margin-right: 100px;
-                width: 550px;
-                margin-top: 24px;
+                margin-right: 10%;
+                margin-top: 23px;
                 list-style-type: none;
                 display: flex;    
                 justify-content: space-between;
                 li{
-                    :hover{
+                    margin-right: 10%;
+                    :hover{ 
                         color: #00F3BB;
                         text-decoration: line-through;
                     }
@@ -45,7 +45,7 @@ header{
 }
 @media(max-width: 500px){
     header{
-        max-width: 320px;
+        max-width: 100%;
         .arriba{
             height: 100%;
             display: flex;

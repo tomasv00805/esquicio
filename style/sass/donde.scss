@@ -1,13 +1,14 @@
 .donde{
+    display: flex;
     position: relative;
     .celu{
-        position: absolute;
-        height: 750px;
-        margin-left: 300px;
+        position: relative;
+        height: 100%;
+        margin-left: 15%;
         top: -120px;
     }
     .texto{
-        margin-left: 50%;
+        margin-left: 8%;
         width: 500px;
         .h1{
             font-family: 'IBM Plex Sans 300', sans-serif;
@@ -22,23 +23,29 @@
 }
 @media (max-width: 500px){
     .donde{
+        display: inline;
         position: relative;
+        max-width: 100%;
         .celu{
             position: relative;
-            height: 519px;
-            margin-left: 0px;
+            align-items: center;
+            height: 510px;
+            width: 100%;
+            margin-left: 0%;
             top: -70px;
         }
         .texto{
-            margin: 16px;
-            width: 290px;
+            position: relative;
+            top: -40px;
+            margin: 14px;
+            width: 90%;
             .h1{
                 font-family: 'IBM Plex Sans 300', sans-serif;
                 font-size: 36px;
             }
             .text{
                 font-size: 14px;
-                margin-top: 8px;
+                margin-bottom: 5px;
                 font-family: 'IBM Plex Mono', monospace;
             }
         }
