@@ -7,6 +7,10 @@
         max-width: 100%;
         font-size: 60px;
         font-family: 'IBM Plex Sans', sans-serif;
+        display: flex;
+        .azul{
+            color: blue;
+        }
     }
     .parrafo{
         margin-top: 10px;
