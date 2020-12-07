@@ -1,16 +1,13 @@
 header {
-  max-width: 100%;
   height: 60px;
   grid-area: myheder; }
 
 .inicio {
-  max-width: 100%;
   height: 370px;
   grid-area: myinicio; }
 
 .episodios {
   position: relative;
-  max-width: 100%;
   height: 1040px;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   grid-area: myepisodios; }
@@ -27,25 +24,21 @@ header {
 
 .donde {
   position: relative;
-  max-width: 100%;
   height: 600px;
   grid-area: mydonde; }
 
 .invitados {
-  max-width: 100%;
   height: 950px;
   grid-area: myinvitados; }
 
 .temas {
   position: relative;
   top: 15%;
-  max-width: 100%;
   height: 420px;
   grid-area: mytemas; }
 
 .novedades {
   position: relative;
-  max-width: 100%;
   height: 520px;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   grid-area: mynovedades; }
@@ -56,7 +49,6 @@ header {
     height: 7vw; }
 
 footer {
-  max-width: 100%;
   height: 100px;
   grid-area: myfooter; }
 
@@ -66,20 +58,21 @@ body {
   display: grid;
   grid-template-areas: "myheder" "myinicio" "myepisodios" "mydonde" "myinvitados" "mytemas" "mynovedades" "myfooter"; }
 
+@media (max-width: 800px) {
+  .donde {
+    height: 850px;
+    grid-area: mydonde; } }
 @media (max-width: 500px) {
   header {
-    max-width: 100%;
     height: 40px;
     grid-area: myheder; }
 
   .inicio {
-    max-width: 100%;
     height: 300px;
     grid-area: myinicio; }
 
   .episodios {
     position: relative;
-    max-width: 100%;
     height: 1200px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     grid-area: myepisodios; }
@@ -93,24 +86,20 @@ body {
       height: 10vw; }
 
   .donde {
-    max-width: 100%;
     height: 850px;
     grid-area: mydonde; }
 
   .invitados {
-    max-width: 100%;
     height: 1560px;
     grid-area: myinvitados; }
 
   .temas {
     top: 0%;
-    max-width: 100%;
     height: 920px;
     grid-area: mytemas; }
 
   .novedades {
     position: relative;
-    max-width: 100%;
     height: 340px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     grid-area: mynovedades; }

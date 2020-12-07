@@ -1,7 +1,7 @@
 footer{
     .contenedor{
-        margin-left: 100px;
-        margin-right:100px ;
+        padding-left: 8%;
+        padding-right: 8%;
         margin-top: 43px;
         display: flex;
         justify-content: space-between;
@@ -36,11 +36,11 @@ footer{
             flex-direction: column;
             justify-content: center;
         .derechos{
+            text-align: center;
             font-family: 'IBM Plex Mono', monospace;
             width: 100%;
             font-size: 14px;
             margin-top: 25px;
-            margin-left: 47px;
             margin-bottom: 20px;
         }
         .redes{

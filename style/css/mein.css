@@ -2,18 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=IBM+Plex+Sans:wght@300;400&display=swap");
 header {
-  max-width: 100%;
   height: 60px;
   grid-area: myheder; }
 
 .inicio {
-  max-width: 100%;
   height: 370px;
   grid-area: myinicio; }
 
 .episodios {
   position: relative;
-  max-width: 100%;
   height: 1040px;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   grid-area: myepisodios; }
@@ -30,25 +27,21 @@ header {
 
 .donde {
   position: relative;
-  max-width: 100%;
   height: 600px;
   grid-area: mydonde; }
 
 .invitados {
-  max-width: 100%;
   height: 950px;
   grid-area: myinvitados; }
 
 .temas {
   position: relative;
   top: 15%;
-  max-width: 100%;
   height: 420px;
   grid-area: mytemas; }
 
 .novedades {
   position: relative;
-  max-width: 100%;
   height: 520px;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   grid-area: mynovedades; }
@@ -59,7 +52,6 @@ header {
     height: 7vw; }
 
 footer {
-  max-width: 100%;
   height: 100px;
   grid-area: myfooter; }
 
@@ -69,20 +61,21 @@ body {
   display: grid;
   grid-template-areas: "myheder" "myinicio" "myepisodios" "mydonde" "myinvitados" "mytemas" "mynovedades" "myfooter"; }
 
+@media (max-width: 800px) {
+  .donde {
+    height: 850px;
+    grid-area: mydonde; } }
 @media (max-width: 500px) {
   header {
-    max-width: 100%;
     height: 40px;
     grid-area: myheder; }
 
   .inicio {
-    max-width: 100%;
     height: 300px;
     grid-area: myinicio; }
 
   .episodios {
     position: relative;
-    max-width: 100%;
     height: 1200px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     grid-area: myepisodios; }
@@ -96,24 +89,20 @@ body {
       height: 10vw; }
 
   .donde {
-    max-width: 100%;
     height: 850px;
     grid-area: mydonde; }
 
   .invitados {
-    max-width: 100%;
     height: 1560px;
     grid-area: myinvitados; }
 
   .temas {
     top: 0%;
-    max-width: 100%;
     height: 920px;
     grid-area: mytemas; }
 
   .novedades {
     position: relative;
-    max-width: 100%;
     height: 340px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     grid-area: mynovedades; }
@@ -142,7 +131,7 @@ header {
     header .arriba #redirec {
       display: none; }
     header .arriba .lista {
-      margin-right: 10%;
+      margin-right: 12%;
       margin-top: 23px;
       list-style-type: none;
       display: flex;
@@ -162,6 +151,55 @@ header {
           color: black;
           font-size: 18px; }
 
+@media (max-width: 800px) {
+  header .arriba .menunavegation_boton {
+    margin-top: 15px;
+    margin-right: 15px;
+    visibility: visible;
+    float: right;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    outline: none;
+    font-size: 17px; }
+  header .arriba .menu_desactive {
+    display: none; }
+  header .arriba #redirec:checked + .menunavegation_boton label .menu_active {
+    display: none; }
+  header .arriba #redirec:checked + .menunavegation_boton label .menu_desactive {
+    display: inline; }
+  header .arriba #redirec:checked + .menunavegation_boton + .lista {
+    visibility: visible; }
+  header .arriba #redirec {
+    display: none; }
+  header .arriba .lista {
+    background-color: blue;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 350px;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    margin-top: 50px;
+    float: left;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; }
+    header .arriba .lista li {
+      padding: 30px; }
+      header .arriba .lista li :hover {
+        color: #00F3BB;
+        text-decoration: line-through; }
+      header .arriba .lista li :active {
+        color: #060A24 56%;
+        text-decoration: line-through; }
+      header .arriba .lista li a {
+        text-decoration: none;
+        cursor: pointer;
+        font-family: 'IBM Plex Mono200', monospace;
+        color: white;
+        font-size: 16px; } }
 @media (max-width: 500px) {
   header {
     max-width: 100%; }
@@ -224,17 +262,17 @@ header {
             color: white;
             font-size: 16px; } }
 .inicio .presentacion {
-  margin-left: 9%;
+  margin-left: 7%;
   margin-top: 4%; }
 .inicio .titulo {
   max-width: 100%;
-  font-size: 80px;
+  font-size: 60px;
   font-family: 'IBM Plex Sans', sans-serif; }
 .inicio .parrafo {
   margin-top: 10px;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 19px;
-  width: 50%; }
+  width: 60%; }
 .inicio .conocer :hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
 .inicio .conocer button {
@@ -328,30 +366,59 @@ header {
         height: 240px;
         display: inline; } }
 .donde {
-  display: flex;
-  position: relative; }
+  display: grid;
+  position: relative;
+  grid-template-areas: 'celular textos'; }
   .donde .celu {
     position: relative;
     height: 100%;
-    margin-left: 15%;
-    top: -120px; }
+    margin-left: 140px;
+    top: -120px;
+    grid-area: celular; }
   .donde .texto {
-    margin-left: 8%;
-    width: 500px; }
+    padding-left: 20%;
+    margin-right: 4%;
+    grid-area: textos; }
     .donde .texto .h1 {
       font-family: 'IBM Plex Sans 300', sans-serif;
-      font-size: 50px; }
+      font-size: 40px; }
     .donde .texto .text {
-      font-size: 20px;
+      font-size: 18px;
       margin-top: 25px;
       font-family: 'IBM Plex Mono', monospace; }
 
+@media (max-width: 800px) {
+  .donde {
+    display: inline;
+    position: relative; }
+    .donde .celu {
+      padding-left: 0%;
+      position: relative;
+      left: 20%;
+      align-items: center;
+      height: 650px;
+      width: 60%;
+      margin-left: 0%;
+      top: -70px; }
+    .donde .texto {
+      padding: 0;
+      margin-left: 5%;
+      margin-right: 5%;
+      grid-area: textos; }
+      .donde .texto .h1 {
+        font-family: 'IBM Plex Sans 300', sans-serif;
+        font-size: 40px; }
+      .donde .texto .text {
+        font-size: 18px;
+        margin-top: 25px;
+        font-family: 'IBM Plex Mono', monospace; } }
 @media (max-width: 500px) {
   .donde {
     display: inline;
-    position: relative;
-    max-width: 100%; }
+    position: relative; }
     .donde .celu {
+      left: 0;
+      padding-left: 0%;
       position: relative;
       align-items: center;
       height: 510px;
@@ -359,6 +426,7 @@ header {
       margin-left: 0%;
       top: -70px; }
     .donde .texto {
+      padding-left: 0%;
       position: relative;
       top: -40px;
       margin: 14px;
@@ -414,12 +482,15 @@ header {
         height: 240px;
         width: 100%; } }
 .temas .h1 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 50px;
-  margin-left: 240px; }
+  font-family: 'IBM Plex Sans 300', sans-serif;
+  font-size: 40px;
+  margin-left: 10%; }
 .temas .contenedor {
-  margin-left: 18%;
-  margin-right: 15%;
+  width: 80%;
+  grid-gap: 10%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-areas: 'myim1 myim2 myim3 myim4' 'mytext1 mytext2 mytext3 mytext4'; }
   .temas .contenedor .im1, .temas .contenedor .im2, .temas .contenedor .im3, .temas .contenedor .im4 {
@@ -438,12 +509,14 @@ header {
   .temas .contenedor .im4 {
     grid-area: myim4; }
   .temas .contenedor .tx1, .temas .contenedor .tx2, .temas .contenedor .tx3, .temas .contenedor .tx4 {
+    top: -10px;
+    position: relative;
     display: flex;
     margin: auto;
     text-align: center;
     color: black;
-    width: 50%;
-    font-family: 'IBM Plex Sans', sans-serif;
+    width: 85%;
+    font-family: 'IBM Plex Sans 300', sans-serif;
     font-size: 22px; }
   .temas .contenedor .tx1 {
     grid-area: mytext1; }
@@ -463,6 +536,8 @@ header {
       margin-left: 16px;
       margin-top: 48px; }
     .temas .contenedor {
+      width: 100%;
+      grid-gap: 0px;
       max-width: 100%;
       margin: 0px;
       grid-template-areas: 'myim1' 'mytext1' 'myim2' 'mytext2' 'myim3' 'mytext3' 'myim4' 'mytext4'; }
@@ -483,12 +558,11 @@ header {
       .temas .contenedor .im4 {
         grid-area: myim4; }
       .temas .contenedor .tx1, .temas .contenedor .tx2, .temas .contenedor .tx3, .temas .contenedor .tx4 {
-        margin: auto;
+        top: 0px;
         letter-spacing: 0;
-        margin-top: 5px;
         text-align: center;
         color: black;
-        width: 190px;
+        width: 60%;
         font-family: 'IBM Plex Sans 300', sans-serif;
         font-size: 24px; }
       .temas .contenedor .tx1 {
@@ -500,41 +574,47 @@ header {
       .temas .contenedor .tx4 {
         grid-area: mytext4; } }
 .novedades .text {
+  text-align: center;
   margin-top: 200px;
-  margin-left: 33%;
-  font-size: 50px;
+  font-size: 45px;
   color: white;
   font-family: 'IBM Plex Sans', sans-serif; }
-.novedades .escuchar :hover {
-  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
-.novedades .escuchar button {
-  margin-top: 50px;
-  margin-left: 45%;
-  width: 250px;
-  height: 56px;
-  background-color: #00F3BB;
-  color: black;
-  text-decoration: none;
-  font-family: 'IBM Plex Mono 300', monospace;
-  top: 25px;
-  font-size: 20px;
-  border: none; }
+.novedades .escuchar {
+  width: 255px;
+  margin-left: auto;
+  margin-right: auto; }
+  .novedades .escuchar :hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
+  .novedades .escuchar button {
+    position: relative;
+    margin-top: 40px;
+    width: 255px;
+    height: 56px;
+    background-color: #00F3BB;
+    color: black;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono 300', monospace;
+    top: 25px;
+    font-size: 20px;
+    border: none; }
 
 @media (max-width: 500px) {
   .novedades {
     max-width: 100%; }
     .novedades .text {
+      padding: 0px;
       text-align: center;
-      margin-top: 64px;
-      margin-left: 14px;
+      margin-top: 84px;
+      margin-left: 0px;
       font-size: 36px;
       color: white;
       font-family: 'IBM Plex Sans 300', sans-serif; }
     .novedades .escuchar :hover {
       background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
     .novedades .escuchar button {
-      margin-top: 35px;
+      margin-top: 15px;
       margin-left: 15px;
+      margin-right: 0vw;
       width: 92%;
       height: 52px;
       background-color: #00F3BB;
@@ -545,8 +625,8 @@ header {
       font-size: 20px;
       border: none; } }
 footer .contenedor {
-  margin-left: 100px;
-  margin-right: 100px;
+  padding-left: 8%;
+  padding-right: 8%;
   margin-top: 43px;
   display: flex;
   justify-content: space-between; }
@@ -575,11 +655,11 @@ footer .contenedor {
       flex-direction: column;
       justify-content: center; }
       footer .contenedor .derechos {
+        text-align: center;
         font-family: 'IBM Plex Mono', monospace;
         width: 100%;
         font-size: 14px;
         margin-top: 25px;
-        margin-left: 47px;
         margin-bottom: 20px; }
       footer .contenedor .redes {
         font-family: "font_awesome_5_brands";
