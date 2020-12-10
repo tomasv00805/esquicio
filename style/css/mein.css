@@ -267,10 +267,10 @@ header {
 .inicio .titulo {
   max-width: 100%;
   font-size: 60px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  display: flex; }
+  font-family: 'IBM Plex Sans', sans-serif; }
   .inicio .titulo .azul {
-    color: blue; }
+    color: blue;
+    display: contents; }
 .inicio .parrafo {
   margin-top: 10px;
   font-family: 'IBM Plex Mono', monospace;
