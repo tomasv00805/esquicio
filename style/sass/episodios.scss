@@ -7,7 +7,7 @@
         font-family: 'IBM Plex Sans', sans-serif;
     }
     .reproduccion{
-        grid-gap: -100px;
+        grid-gap: -99px;
         position: relative;
         margin-left: 7%;
         margin-right: 7%;
@@ -22,6 +22,8 @@
             height: 290px;
             width: 100%;
             margin: 1px;
+            border: none;
+            background-color: transparent;
         }
         .r1{
             grid-area: ep1;
@@ -37,6 +39,8 @@
         }
         .r1-sm,.r2-sm,.r3-sm,.r4-sm{
             display: none;
+            border: none;
+            background-color: transparent;
         }
     }
 }

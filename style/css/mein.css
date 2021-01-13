@@ -47,7 +47,7 @@ header {
   grid-area: mynovedades; }
   .novedades .ar2 {
     position: absolute;
-    top: 1;
+    top: 0;
     width: 100%;
     height: 7vw; }
 
@@ -108,7 +108,7 @@ body {
     grid-area: mynovedades; }
     .novedades .ar2 {
       position: absolute;
-      top: 1;
+      top: 0;
       height: 15vw; }
 
   footer {
@@ -142,7 +142,6 @@ header {
           color: #00F3BB;
           text-decoration: line-through; }
         header .arriba .lista li :active {
-          color: #060A24 56%;
           text-decoration: line-through; }
         header .arriba .lista li a {
           text-decoration: none;
@@ -192,7 +191,6 @@ header {
         color: #00F3BB;
         text-decoration: line-through; }
       header .arriba .lista li :active {
-        color: #060A24 56%;
         text-decoration: line-through; }
       header .arriba .lista li a {
         text-decoration: none;
@@ -253,7 +251,6 @@ header {
             color: #00F3BB;
             text-decoration: line-through; }
           header .arriba .lista li :active {
-            color: #060A24 56%;
             text-decoration: line-through; }
           header .arriba .lista li a {
             text-decoration: none;
@@ -279,6 +276,7 @@ header {
 .inicio .conocer :hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
 .inicio .conocer button {
+  cursor: pointer;
   margin-top: 70px;
   width: 250px;
   height: 56px;
@@ -325,7 +323,7 @@ header {
   margin-top: 180px;
   font-family: 'IBM Plex Sans', sans-serif; }
 .episodios .reproduccion {
-  grid-gap: -100px;
+  grid-gap: -99px;
   position: relative;
   margin-left: 7%;
   margin-right: 7%;
@@ -336,7 +334,9 @@ header {
   .episodios .reproduccion .r1, .episodios .reproduccion .r2, .episodios .reproduccion .r3, .episodios .reproduccion .r4 {
     height: 290px;
     width: 100%;
-    margin: 1px; }
+    margin: 1px;
+    border: none;
+    background-color: transparent; }
   .episodios .reproduccion .r1 {
     grid-area: ep1; }
   .episodios .reproduccion .r2 {
@@ -346,7 +346,9 @@ header {
   .episodios .reproduccion .r4 {
     grid-area: ep4; }
   .episodios .reproduccion .r1-sm, .episodios .reproduccion .r2-sm, .episodios .reproduccion .r3-sm, .episodios .reproduccion .r4-sm {
-    display: none; }
+    display: none;
+    border: none;
+    background-color: transparent; }
 
 @media (max-width: 500px) {
   .episodios {
@@ -589,6 +591,7 @@ header {
   .novedades .escuchar :hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
   .novedades .escuchar button {
+    cursor: pointer;
     position: relative;
     margin-top: 40px;
     width: 255px;
@@ -642,11 +645,11 @@ footer .contenedor {
       list-style-type: none;
       display: flex;
       margin: 0;
-      margin-block: 0px;
       padding: 0; }
       footer .contenedor .redes ul li {
+        cursor: pointer;
         margin-left: 36px; }
-        footer .contenedor .redes ul li i {
+        footer .contenedor .redes ul li link {
           font-size: 20px; }
 
 @media (max-width: 500px) {
@@ -673,7 +676,6 @@ footer .contenedor {
           display: flex;
           justify-content: space-around;
           margin: 0;
-          margin-block: 0px;
           padding: 0px;
           padding-inline-start: 0px; }
           footer .contenedor .redes ul li {
