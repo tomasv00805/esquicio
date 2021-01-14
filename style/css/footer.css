@@ -17,8 +17,10 @@ footer .contenedor {
       footer .contenedor .redes ul li {
         cursor: pointer;
         margin-left: 36px; }
-        footer .contenedor .redes ul li link {
-          font-size: 20px; }
+        footer .contenedor .redes ul li a {
+          font-size: 20px;
+          text-decoration: none;
+          color: black; }
 
 @media (max-width: 500px) {
   footer {
@@ -48,7 +50,7 @@ footer .contenedor {
           padding-inline-start: 0px; }
           footer .contenedor .redes ul li {
             margin-left: 0px; }
-            footer .contenedor .redes ul li i {
+            footer .contenedor .redes ul li a {
               font-size: 16px; } }
 
 /*# sourceMappingURL=footer.css.map */

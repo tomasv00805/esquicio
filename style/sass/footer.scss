@@ -19,8 +19,10 @@ footer{
             li{
                 cursor: pointer;
                margin-left: 36px;
-               link{
+               a{
                    font-size: 20px;
+                   text-decoration: none;
+                   color: black;
                }
             }
         }
@@ -57,7 +59,7 @@ footer{
                 padding-inline-start: 0px;
                 li{
                    margin-left: 0px;
-                   i{
+                   a{
                        font-size: 16px;
                    }
                 }
